@@ -4,7 +4,6 @@ Vue.use(VueRouter)
 import Home from'@/pages/Home'
 import Search from'@/pages/Search'
 import Login from'@/pages/Login'
-
 import Register from'@/pages/Register'
 
 export default new VueRouter({
@@ -14,7 +13,7 @@ export default new VueRouter({
             component:Home
         },
         {
-            path:'/search/:keyword',
+            path:'/search/:keyword?',//代表我的params参数可传可不传
             component:Search,
             name:'search',
             
